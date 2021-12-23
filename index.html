@@ -11,52 +11,57 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet"
+    href=https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css/>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav>
-        <a class="logo link" lang="en" href="./index.html"
-          >Web<span class="header-logo-studio">Studio</span>
-        </a>
-        <ul class="list nav-list">
-          <li class="nav-item">
-            <a class="link header-link highlighted" href="./index.html"
-              >Студия</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="link header-link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li class="nav-item">
-            <a class="link header-link" href="">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <ul class="list contact-list">
-        <li class="contact-item">
-          <a
-            class="header-link link"
-            lang="en"
-            href="mailto:info@devstudio.com"
-          >
-            info@devstudio.com</a
-          >
-        </li>
-        <li class="contact-item">
-          <a class="header-link link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      <div class="container header-container">
+        <nav class="nav">
+          <a class="logo link" lang="en" href="./index.html"
+            >Web<span class="header-logo-studio">Studio</span>
+          </a>
+          <ul class="list nav-list">
+            <li class="nav-item">
+              <a class="link header-link highlighted" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="link header-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav-item">
+              <a class="link header-link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-contact">
+          <ul class="list contact-list">
+            <li class="contact-item">
+              <a
+                class="header-link link header-mail"
+                lang="en"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-item">
+              <a class="header-link link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <main>
       <section class="hero">
-        <h1 class="hero-title">
-          Эффективные решения<br />
-          для вашего бизнеса
-        </h1>
-        <button class="hero-btn" type="button">Заказать услугу</button>
+        <div class="container">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button class="hero-btn" type="button">Заказать услугу</button>
+        </div>
       </section>
       <section class="advantage">
         <h2 class="hidden">Наши преимущества</h2>

@@ -1,3 +1,19 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+button {
+  cursor: pointer;
+}
 :root {
   --main-color: #757575;
   --accent-color: #2196f3;
@@ -33,21 +49,58 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+.container {
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 /* ----------index.html----------- */
 /* -----------header--------------- */
-
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   color: var(--accent-color);
+  margin-right: 93px;
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
 }
 .header-logo-studio {
   color: var(--link-color);
 }
+.nav {
+  display: flex;
+}
 .nav-list {
   color: var(--link-color);
+  display: flex;
+  align-items: center;
+}
+/* .nav-item {
+  padding: 32px 0;
+} */
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contact-list {
+  display: flex;
+}
+.header-contact {
+  margin-left: auto;
+}
+.header-mail {
+  margin-right: 50px;
 }
 .header-link {
   font-weight: 500;
@@ -72,6 +125,11 @@ body {
   line-height: calc(60 / 44);
   text-transform: uppercase;
   color: var(--second-title-color);
+  padding-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  max-width: 670px;
 }
 .hero-btn {
   font-family: inherit;
@@ -82,6 +140,10 @@ body {
   color: var(--btn-color);
   background-color: var(--accent-color);
   cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 200px;
+  padding: 10px 32px;
+  border: 0;
 }
 /* advantage */
 .advatage-title {
