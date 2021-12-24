@@ -14,6 +14,9 @@ ul {
 button {
   cursor: pointer;
 }
+img {
+  display: block;
+}
 :root {
   --main-color: #757575;
   --accent-color: #2196f3;
@@ -73,8 +76,6 @@ body {
   line-height: 1.2;
   color: var(--accent-color);
   margin-right: 93px;
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
 }
 .header-logo-studio {
   color: var(--link-color);
@@ -87,9 +88,6 @@ body {
   display: flex;
   align-items: center;
 }
-/* .nav-item {
-  padding: 32px 0;
-} */
 .nav-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -107,6 +105,7 @@ body {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  padding: 32px 0;
 }
 .header-link:hover,
 .header-link:focus,
@@ -114,6 +113,7 @@ body {
   color: var(--accent-color);
 }
 /*--------------- hero------------- */
+
 .hero {
   text-align: center;
   background-color: #2f303a;
@@ -125,7 +125,6 @@ body {
   line-height: calc(60 / 44);
   text-transform: uppercase;
   color: var(--second-title-color);
-  padding-top: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -141,9 +140,12 @@ body {
   background-color: var(--accent-color);
   cursor: pointer;
   border-radius: 4px;
-  margin-bottom: 200px;
   padding: 10px 32px;
   border: 0;
+}
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 /* advantage */
 .advatage-title {
@@ -152,16 +154,38 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--first-title-color);
+  margin-bottom: 10px;
 }
 .advatage-after-title {
   line-height: calc(24 / 14);
 }
+.advantage-list {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantage-item:not(:last-child) {
+  margin-right: 30px;
+  max-width: 270px;
+}
+
 /* about */
 .section-title {
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
   color: var(--first-title-color);
+  margin-bottom: 50px;
+}
+.about-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.about-list {
+  display: flex;
+}
+.about-item:not(:last-child) {
+  margin-right: 30px;
 }
 /* team */
 .team {
@@ -175,8 +199,23 @@ body {
 .team-name {
   font-weight: 500;
   color: var(--first-title-color);
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
-
+.team-list {
+  display: flex;
+}
+.team-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-item-text {
+  margin-left: auto;
+  margin-right: auto;
+}
 /* footer */
 .footer {
   background-color: #2f303a;
