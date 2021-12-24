@@ -53,11 +53,11 @@ body {
   margin: -1px;
 }
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 /* ----------index.html----------- */
 /* -----------header--------------- */
@@ -75,6 +75,8 @@ body {
   font-size: 26px;
   line-height: 1.2;
   color: var(--accent-color);
+}
+.header-logo {
   margin-right: 93px;
 }
 .header-logo-studio {
@@ -147,6 +149,10 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+.pdng-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* advantage */
 .advatage-title {
   font-size: 14px;
@@ -161,8 +167,6 @@ body {
 }
 .advantage-list {
   display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .advantage-item:not(:last-child) {
   margin-right: 30px;
@@ -177,10 +181,7 @@ body {
   color: var(--first-title-color);
   margin-bottom: 50px;
 }
-.about-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .about-list {
   display: flex;
 }
@@ -204,10 +205,7 @@ body {
 }
 .team-list {
   display: flex;
-}
-.team-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  text-align: center;
 }
 .team-item:not(:last-child) {
   margin-right: 30px;
@@ -217,6 +215,17 @@ body {
   margin-right: auto;
 }
 /* footer */
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.address {
+  margin-top: 20px;
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer {
   background-color: #2f303a;
 }
@@ -236,6 +245,25 @@ body {
   color: var(--accent-color);
 }
 /* portfolio.html */
+.portfolio-filter-list {
+  display: flex;
+  margin-bottom: 34px;
+  justify-content: center;
+}
+.portfolio-item:not(:last-child) {
+  margin-right: 8px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.portfolio-item-example {
+  width: calc((100% / 9 * 30px) / 9);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
 .portfolio-btn {
   font-weight: 500;
   font-size: 16px;
@@ -243,6 +271,9 @@ body {
   color: var(--second-btn-color);
   cursor: pointer;
   font-family: inherit;
+  border-radius: 4px;
+  padding: 6px 22px;
+  border: 0;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus,
@@ -250,11 +281,16 @@ body {
   color: var(--btn-color);
   background-color: var(--accent-color);
 }
+.portfolio-caption {
+  padding: 20px 24px;
+}
 .portfolio-title {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--first-title-color);
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 .portfolio-after-title {
   font-size: 16px;
